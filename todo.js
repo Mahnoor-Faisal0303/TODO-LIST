@@ -1,15 +1,16 @@
-let itemBox = document.getElementById("items");
-let listContainer = document.getElementById("list-container");
+const itemBox = document.getElementById("items");
+const listContainer = document.getElementById("list-container");
 let count = 0;
 let item;
 
-let addbtn = document.getElementById("button_add");
-let updatebtn = document.getElementById("button_update");
-
-updatebtn.style.display = "none";
+const addbtn = document.getElementById("button_add");
+const updatebtn = document.getElementById("button_update");
 
 function addTask() {
-  if (itemBox.value.trim() !== "") {
+  if (itemBox.value.trim() == "") {
+    alert("you must write somethig2")
+    return;
+  }
     //list creation
     let li = document.createElement("li");
 
@@ -38,10 +39,11 @@ function addTask() {
     };
 
     itemBox.value = "";
-  } else {
-    alert("You Must Write Something!");
   }
-}
+  // else {
+  //   alert("You Must Write Something!");
+  // }
+
 function updateTask() {
   item.firstChild.nodeValue = itemBox.value;
   addbtn.style.display = "inline";

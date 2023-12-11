@@ -41,6 +41,8 @@ hr {
     justify-content: center;
     margin-right: 427px;
 }
+#updatebtn{
+    display:"none";}
 
 .button-ui button {
     margin-top: 5px;
