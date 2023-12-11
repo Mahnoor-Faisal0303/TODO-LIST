@@ -2,13 +2,12 @@ const itemBox = document.getElementById("items");
 const listContainer = document.getElementById("list-container");
 let count = 0;
 let item;
-
 const addbtn = document.getElementById("button_add");
 const updatebtn = document.getElementById("button_update");
 
 function addTask() {
   if (itemBox.value.trim() == "") {
-    alert("you must write somethig2")
+    alert("you must write somethig")
     return;
   }
     //list creation

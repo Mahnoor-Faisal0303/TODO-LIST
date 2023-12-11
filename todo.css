@@ -41,8 +41,10 @@ hr {
     justify-content: center;
     margin-right: 427px;
 }
-#updatebtn{
-    display:"none";}
+
+#button_update{
+    display: none;
+}
 
 .button-ui button {
     margin-top: 5px;
@@ -58,7 +60,6 @@ hr {
 .item-list {
     display: flex;
     margin-right: 427px;
-    /* margin-top: 5px;  */
     justify-content: space-between;
     font-size: 20px;
     color: rgb(116, 111, 111);
