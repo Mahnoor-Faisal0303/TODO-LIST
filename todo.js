@@ -40,9 +40,6 @@ function addTask() {
 
     itemBox.value = "";
   }
-  // else {
-  //   alert("You Must Write Something!");
-  // }
 
 function updateTask() {
   item.firstChild.nodeValue = itemBox.value;
