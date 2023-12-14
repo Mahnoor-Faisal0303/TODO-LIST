@@ -32,10 +32,12 @@ function Edit(id) {
   new_id = id;
   if (editedItem) {
     itemBox.value = editedItem.name;
-    button_update.classList = [];
-    button_add.classList = [];
-    button_add.classList.add("displayNone");
-    button_update.classList.add("displayShow");
+  // button_add.classList.replace("displayShow", "displayNone");
+  // button_update.classList.replace("displayNone","displayShow");
+   button_add.classList.add("displayNone");
+   button_update.classList.add("displayShow");
+   button_add.classList.replace("displayShow", "displayNone");
+   button_update.classList.replace("displayNone","displayShow");
   }
 }
 function updateTask() {
@@ -48,9 +50,7 @@ function updateTask() {
   console.log(todos);
   editedItem.name = itemBox.value;
   itemBox.value = "";
-  button_update.classList = [];
-  button_add.classList = [];
-  button_add.classList.add("displayShow");
-  button_update.classList.add("displayNone");
+  button_add.classList.replace("displayNone", "displayShow");
+  button_update.classList.replace("displayShow","displayNone");
   mapData();
 }
