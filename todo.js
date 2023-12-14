@@ -30,9 +30,12 @@ function addTask() {
       listContainer.removeChild(li);
     };
     document.getElementById("edit" + count).onclick = function () {
-      addbtn.style.display = "none";
-      updatebtn.style.display = "inline";
+      //addbtn.style.display = "none";
+      //updatebtn.style.display = "inline";
+      addbtn.classList.add("displayNone");
+      updatebtn.classList.add("displayShow");
       item = li;
+        //console.log(updatebtn);
 
       itemBox.value = li.firstChild.nodeValue;
     };
@@ -42,7 +45,9 @@ function addTask() {
 
 function updateTask() {
   item.firstChild.nodeValue = itemBox.value;
-  addbtn.style.display = "inline";
-  updatebtn.style.display = "none";
+  addbtn.classList.add("displayShow");
+  updatebtn.classList.add("displayNone");
+  // addbtn.style.display = "inline";
+  // updatebtn.style.display = "none";
   itemBox.value = "";
 }
