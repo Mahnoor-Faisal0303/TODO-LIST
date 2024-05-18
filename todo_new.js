@@ -17,7 +17,7 @@ function addTask() {
     return;
   }
   global_id = global_id + 1;
-  const newItem = { id: global_id, name: itemBox.value };
+  const newItem = { id: global_id, name: itemBox.value };     
   todos.push(newItem);
   itemBox.value = "";
   mapData();
